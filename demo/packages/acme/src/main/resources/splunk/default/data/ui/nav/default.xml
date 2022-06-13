@@ -1,0 +1,7 @@
+<nav search_view="search">
+  <view name="search" />
+  <view name="sample_simple_dashboard" default="true" />
+  <view name="conf22_demo" />
+  <view name="dashboards" />
+  <view name="reports" />
+</nav>

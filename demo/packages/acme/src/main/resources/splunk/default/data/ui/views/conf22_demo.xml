@@ -1,0 +1,4 @@
+<?xml version="1.0"?>
+<view template="acme:/templates/conf22.html" type="html">
+	<label>Splunk .Conf 2022 Demo</label>
+</view>
