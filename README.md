@@ -46,3 +46,33 @@ To create a working demo, there are some prerequisites:
 
 
 
+# Setting Dark Mode Automatically
+
+In some cases, you may want the dashboard to auto-select dark or light mode based on the user's system settings.  Here is a method you can use for that.
+
+Modern browsers support a `matchMedia` function which you can pass `'(prefers-color-scheme: dark)'` as an argument to find the information you need.  It returns an object that looks something like this:
+
+```
+{
+	media: '(prefers-color-scheme: dark)', 
+	matches: false, 
+	onchange: null
+}
+```
+
+
+
+Since the `matches` key returns a bolean for dark (true) or light (false), we can set our color scheme dynamically when the dashboard loads using the `colorScheme` property in the [SplunkThemeProvider](https://splunkui.splunk.com/Packages/themes/SplunkThemeProvider) component:
+
+```
+layout(
+    <SplunkThemeProvider 
+    	family="enterprise" 
+    	colorScheme={window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? "dark" : "light"} 
+    	density="comfortable"
+    >
+        <ServiceExcellence />
+    </SplunkThemeProvider>
+);
+```
+
