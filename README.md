@@ -3,6 +3,8 @@
 
 Supplemental content from my presentation at [Splunk .Conf 2022](https://conf.splunk.com/watch/conf-online.html) on June 14, 2022
 
+[SplunkUI Documentation](https://splunkui.splunk.com)
+
 
 
 ## Slides
@@ -11,7 +13,7 @@ A PDF copy of the presentation is available titled [DEV1564B_Splunk_conf22_slide
 
 
 
-## Demo
+## Using the Demo
 
 The demo folder contains the code from the presentation.  
 
@@ -76,3 +78,26 @@ layout(
 );
 ```
 
+
+
+## React Visualizations
+
+There are a lot of options out there, but here are a few that I have used:
+
+**Nivo** - https://nivo.rocks
+
+**React Google Charts** - https://www.react-google-charts.com
+
+**Victory** - https://formidable.com/open-source/victory/
+
+**react-chartjs-2** - https://react-chartjs-2.js.org
+
+
+
+## Learn React
+
+https://reactjs.org/tutorial
+
+https://www.codecademy.com/learn/react-101
+
+https://www.freecodecamp.org/learn/front-end-development-libraries/#react
