@@ -46,7 +46,7 @@ To create a working demo, there are some prerequisites:
 
 
 
-# Setting Dark Mode Automatically
+## Setting Dark Mode Automatically
 
 In some cases, you may want the dashboard to auto-select dark or light mode based on the user's system settings.  Here is a method you can use for that.
 
@@ -68,10 +68,10 @@ Since the `matches` key returns a bolean for dark (true) or light (false), we ca
 layout(
     <SplunkThemeProvider 
     	family="enterprise" 
-    	colorScheme={window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? "dark" : "light"} 
-    	density="comfortable"
+    	density="comfortable" 
+    	colorScheme={window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? "dark": "light"}
     >
-        <ServiceExcellence />
+        <MyDashboard />
     </SplunkThemeProvider>
 );
 ```
